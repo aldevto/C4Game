@@ -7,37 +7,29 @@ enum Tile{
     case Empty
 }
 
-struct BoardItem
-{
+struct BoardItem {
     var indexPath: IndexPath!
     var tile: Tile!
     
-    func yellowTile() -> Bool
-    {
+    func yellowTile() -> Bool {
         return tile == Tile.Yellow
     }
     
-    func redTile() -> Bool
-    {
+    func redTile() -> Bool {
         return tile == Tile.Red
     }
     
-    func emptyTile() -> Bool
-    {
+    func emptyTile() -> Bool {
         return tile == Tile.Empty
     }
     
-    func tileColor() -> UIColor
-    {
-        if redTile()
-        {
+    func tileColor() -> UIColor {
+        if redTile() {
             return .red
         }
-        if yellowTile()
-        {
+        if yellowTile() {
             return .systemYellow
         }
-        
         return .white
     }
 }
