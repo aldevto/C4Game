@@ -1,10 +1,10 @@
 import Foundation
 import UIKit
 
-enum Tile{
-    case Red
-    case Yellow
-    case Empty
+enum Tile {
+    case red
+    case yellow
+    case empty
 }
 
 struct BoardItem {
@@ -12,15 +12,15 @@ struct BoardItem {
     var tile: Tile!
     
     func yellowTile() -> Bool {
-        return tile == Tile.Yellow
+        return tile == Tile.yellow
     }
     
     func redTile() -> Bool {
-        return tile == Tile.Red
+        return tile == Tile.red
     }
     
     func emptyTile() -> Bool {
-        return tile == Tile.Empty
+        return tile == Tile.empty
     }
     
     func tileColor() -> UIColor {

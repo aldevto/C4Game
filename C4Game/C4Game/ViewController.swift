@@ -26,9 +26,11 @@ extension ViewController: UICollectionViewDataSource {
     func numberOfSections(in cv: UICollectionView) -> Int {
         return board.count
     }
+    
     func collectionView(_ cv: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return board[section].count
     }
+    
     func collectionView(_ cv: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = cv.dequeueReusableCell(withReuseIdentifier: "idCell", for: indexPath) as! BoardCell
         
@@ -41,5 +43,21 @@ extension ViewController: UICollectionViewDataSource {
 
 extension ViewController: UICollectionViewDelegate {
     
+    func collectionView(_ cv: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+       
+        let column = indexPath.item
+        
+        if var boardItem = getLowesEmptyBoardItem(column) {
+            
+            if let cell = collectionView.cellForItem(at: boardItem.indexPath) as? BoardCell {
+                
+                cell.image.tintColor = currentTurnColor()
+                boardItem.tile = currentTurnTile()
+                updateBoardWithBoardItem(boardItem)
+                toggleTurn(turnImage)
+            }
+        }
+    }
+        
 }
 
