@@ -18,8 +18,8 @@ class ViewController: UIViewController {
     }
     
     func setCellWidthHeight() {
-            let width = collectionView.frame.size.width / 9
-            let height = collectionView.frame.size.height / 6
+            let width = collectionView.frame.size.width / 10
+            let height = collectionView.frame.size.height / 7
             let flowLayout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
             flowLayout.itemSize = CGSize(width: width, height: height)
         }
@@ -36,7 +36,7 @@ class ViewController: UIViewController {
     
     func resetCells() {
         for cell in collectionView.visibleCells as! [BoardCell] {
-            cell.image.tintColor = .white
+            cell.image.tintColor = .systemBackground
         }
     }
 }

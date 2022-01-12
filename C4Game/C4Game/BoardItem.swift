@@ -30,6 +30,6 @@ struct BoardItem {
         if yellowTile() {
             return .systemYellow
         }
-        return .white
+        return .systemBackground
     }
 }
