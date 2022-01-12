@@ -41,9 +41,11 @@ func currentTurnColor() -> UIColor {
     return yellowTurn() ? .systemYellow : .red
 }
 
-func currentTurnTile() -> String {
+func currentTurnVictoryMessage() -> String {
     
     return yellowTurn() ? "Gano El Amarillo!" : "Gano El Rojo"
 }
+
+
 
 
