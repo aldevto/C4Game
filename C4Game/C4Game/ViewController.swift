@@ -1,6 +1,7 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var turnImage: UIImageView!
     
@@ -18,15 +19,19 @@ class ViewController: UIViewController {
     }
     
     func setCellWidthHeight() {
+        
             let width = collectionView.frame.size.width / 10
             let height = collectionView.frame.size.height / 7
             let flowLayout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
+        
             flowLayout.itemSize = CGSize(width: width, height: height)
         }
     
     func resultAlert(_ title: String) {
+        
         let message = "/n:Rojo: \(String(redScore)) /n:Amarillo: \(String(yellowScore))"
         let ac = UIAlertController(title: title, message: message, preferredStyle: .actionSheet)
+        
         ac.addAction(UIAlertAction(title: "Reiniciar", style: .default, handler: { [self] (_) in
             resetBoard()
             resetCells()
@@ -35,7 +40,9 @@ class ViewController: UIViewController {
     }
     
     func resetCells() {
+        
         for cell in collectionView.visibleCells as! [BoardCell] {
+            
             cell.image.tintColor = .systemBackground
         }
     }
@@ -95,7 +102,6 @@ extension ViewController: UICollectionViewDelegate {
                     resultAlert("Empate")
                 }
                 toggleTurn(turnImage)
-
             }
         }
     }
