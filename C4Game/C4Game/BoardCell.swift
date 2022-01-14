@@ -1,5 +1,5 @@
 import UIKit
 
 class BoardCell: UICollectionViewCell {
-    @IBOutlet weak var image: UIImageView!
+    @IBOutlet weak var image: UIView!
 }
