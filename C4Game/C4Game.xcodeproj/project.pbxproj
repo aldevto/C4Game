@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		479B5ACF2799E9AD00A27907 /* SelectColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479B5ACE2799E9AD00A27907 /* SelectColorViewController.swift */; };
+		479B5AD12799F79100A27907 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479B5AD02799F79100A27907 /* Board.swift */; };
 		479BC2DF278C84C2001244FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479BC2DE278C84C2001244FA /* AppDelegate.swift */; };
 		479BC2E1278C84C2001244FA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479BC2E0278C84C2001244FA /* SceneDelegate.swift */; };
 		479BC2E3278C84C2001244FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479BC2E2278C84C2001244FA /* ViewController.swift */; };
@@ -16,10 +18,6 @@
 		479BC2F6278C84C3001244FA /* C4GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479BC2F5278C84C3001244FA /* C4GameTests.swift */; };
 		479BC300278C84C3001244FA /* C4GameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479BC2FF278C84C3001244FA /* C4GameUITests.swift */; };
 		479BC302278C84C3001244FA /* C4GameUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479BC301278C84C3001244FA /* C4GameUITestsLaunchTests.swift */; };
-		479BC313278CA483001244FA /* BoardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479BC312278CA483001244FA /* BoardCell.swift */; };
-		479BC315278CA7D4001244FA /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479BC314278CA7D4001244FA /* Board.swift */; };
-		479BC317278CA7E0001244FA /* BoardItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479BC316278CA7E0001244FA /* BoardItem.swift */; };
-		479BC319278CA7EB001244FA /* Turn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479BC318278CA7EB001244FA /* Turn.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		479B5ACE2799E9AD00A27907 /* SelectColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectColorViewController.swift; sourceTree = "<group>"; };
+		479B5AD02799F79100A27907 /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
 		479BC2DB278C84C2001244FA /* C4Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = C4Game.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		479BC2DE278C84C2001244FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		479BC2E0278C84C2001244FA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,10 +53,6 @@
 		479BC2FB278C84C3001244FA /* C4GameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = C4GameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		479BC2FF278C84C3001244FA /* C4GameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = C4GameUITests.swift; sourceTree = "<group>"; };
 		479BC301278C84C3001244FA /* C4GameUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = C4GameUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		479BC312278CA483001244FA /* BoardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardCell.swift; sourceTree = "<group>"; };
-		479BC314278CA7D4001244FA /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
-		479BC316278CA7E0001244FA /* BoardItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardItem.swift; sourceTree = "<group>"; };
-		479BC318278CA7EB001244FA /* Turn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Turn.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,11 +106,9 @@
 				479BC2DE278C84C2001244FA /* AppDelegate.swift */,
 				479BC2E0278C84C2001244FA /* SceneDelegate.swift */,
 				479BC2E2278C84C2001244FA /* ViewController.swift */,
-				479BC314278CA7D4001244FA /* Board.swift */,
-				479BC312278CA483001244FA /* BoardCell.swift */,
-				479BC316278CA7E0001244FA /* BoardItem.swift */,
-				479BC318278CA7EB001244FA /* Turn.swift */,
 				479BC2E4278C84C2001244FA /* Main.storyboard */,
+				479B5AD02799F79100A27907 /* Board.swift */,
+				479B5ACE2799E9AD00A27907 /* SelectColorViewController.swift */,
 				479BC2E7278C84C3001244FA /* Assets.xcassets */,
 				479BC2E9278C84C3001244FA /* LaunchScreen.storyboard */,
 				479BC2EC278C84C3001244FA /* Info.plist */,
@@ -270,13 +264,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				479B5ACF2799E9AD00A27907 /* SelectColorViewController.swift in Sources */,
 				479BC2E3278C84C2001244FA /* ViewController.swift in Sources */,
+				479B5AD12799F79100A27907 /* Board.swift in Sources */,
 				479BC2DF278C84C2001244FA /* AppDelegate.swift in Sources */,
-				479BC315278CA7D4001244FA /* Board.swift in Sources */,
-				479BC313278CA483001244FA /* BoardCell.swift in Sources */,
 				479BC2E1278C84C2001244FA /* SceneDelegate.swift in Sources */,
-				479BC317278CA7E0001244FA /* BoardItem.swift in Sources */,
-				479BC319278CA7EB001244FA /* Turn.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
